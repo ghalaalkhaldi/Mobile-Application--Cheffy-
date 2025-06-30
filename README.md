@@ -1,9 +1,8 @@
 # Mobile Application - Cheffy
 
+
 ## Introduction
 CHEFFY is a mobile application designed as a culinary hub, uniting talented chefs and visionary restaurants on a single platform. It allows chefs to showcase their culinary expertise, share signature recipes, and connect with potential employers seeking their unique skills. Simultaneously, restaurant owners and managers can discover top culinary talent, acquire innovative recipes to elevate their menus, and streamline their hiring process. CHEFFY aims to foster a dynamic community where culinary passions thrive and opportunities abound. 
-
-
 
 
 ## Project Objectives
@@ -26,7 +25,7 @@ The Cheffy app offers a comprehensive set of features for both chefs and restaur
 
 * **Authentication/Authorization:** Secure login and registration for chefs and restaurants. 
 
-###Core Functionalities
+### Core Functionalities
 
 * **Recipe Marketplace:** 
 
@@ -71,3 +70,11 @@ The app includes intuitive interfaces for:
 
 ## Report
 For a more in-depth look at the app's functionality and codebase, here's The full project report is available in the `docs/Cheffy report.pdf` file.
+
+## License
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+
+---
+
+**Contact:**
+Ghala M. Alkhaldi - ghalaalkhaldi10@gmail.com
