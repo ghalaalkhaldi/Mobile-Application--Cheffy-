@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A5440232BD19AF30063A286 /* WalkThroughPageOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5440222BD19AF30063A286 /* WalkThroughPageOneViewController.swift */; };
+		0A5440252BD19B190063A286 /* WalkThroughPageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5440242BD19B190063A286 /* WalkThroughPageTwoViewController.swift */; };
+		0A5440272BD19B5B0063A286 /* WalkThroughPageThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5440262BD19B5B0063A286 /* WalkThroughPageThreeViewController.swift */; };
+		0AABD3E92BD16A0100B0573F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD3E82BD16A0100B0573F /* AppDelegate.swift */; };
+		0AABD3EB2BD16A0100B0573F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD3EA2BD16A0100B0573F /* SceneDelegate.swift */; };
+		0AABD3ED2BD16A0100B0573F /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD3EC2BD16A0100B0573F /* GetStartedViewController.swift */; };
+		0AABD3F02BD16A0100B0573F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD3EE2BD16A0100B0573F /* Main.storyboard */; };
+		0AABD3F22BD16A0500B0573F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD3F12BD16A0500B0573F /* Assets.xcassets */; };
+		0AABD3F52BD16A0500B0573F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD3F32BD16A0500B0573F /* LaunchScreen.storyboard */; };
+		0AABD3FE2BD173C800B0573F /* PagerRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD3FD2BD173C800B0573F /* PagerRootViewController.swift */; };
+		66D4EC99E0ACBCAD9D6FBEB1 /* Pods_Cheffy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296D4CD9DA57D2C97A4DB82A /* Pods_Cheffy.framework */; };
+		9C0A8CE42BD24FB500D9946D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A8CE32BD24FB500D9946D /* UIView+Extensions.swift */; };
+		9C0A8CE92BD2507400D9946D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A8CE82BD2507400D9946D /* Constants.swift */; };
+		9C0A8CED2BD250E000D9946D /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A8CEC2BD250E000D9946D /* UtilityFunctions.swift */; };
+		9C0A8CF52BD2516800D9946D /* CHResturantAPIManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A8CF42BD2516800D9946D /* CHResturantAPIManagers.swift */; };
+		9C0A8CF72BD2517400D9946D /* Libraries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A8CF62BD2517400D9946D /* Libraries.swift */; };
+		9C0A8CF92BD2517D00D9946D /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A8CF82BD2517D00D9946D /* Resources.swift */; };
+		9C0A8CFC2BD2799F00D9946D /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A8CFB2BD2799F00D9946D /* LoginPageViewController.swift */; };
+		9C0A8CFE2BD279F100D9946D /* SignupPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A8CFD2BD279F100D9946D /* SignupPageViewController.swift */; };
+		9C2D37BC2BDB80500087E29C /* CHCategoriesDishesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2D37BB2BDB80500087E29C /* CHCategoriesDishesPageViewController.swift */; };
+		9C2D37BE2BDB81F00087E29C /* CHCategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2D37BD2BDB81F00087E29C /* CHCategoriesTableViewCell.swift */; };
+		9C2D37C02BDB95930087E29C /* DishDetailViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2D37BF2BDB95930087E29C /* DishDetailViewControllerCollectionViewCell.swift */; };
+		9C2D37C22BDBADD20087E29C /* CHResturantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2D37C12BDBADD20087E29C /* CHResturantTableViewCell.swift */; };
+		9C2D37C42BDBAE8F0087E29C /* CHResturantPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2D37C32BDBAE8F0087E29C /* CHResturantPageViewController.swift */; };
+		9CAC2E5E2BDBE7DD00BCE8BD /* CHUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC2E5D2BDBE7DD00BCE8BD /* CHUserModel.swift */; };
+		9CAC2E602BDBEC4700BCE8BD /* CHProfileAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC2E5F2BDBEC4700BCE8BD /* CHProfileAPIManager.swift */; };
+		9CBE68F82BDBD5F8008B8658 /* CHAddDishesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE68F72BDBD5F8008B8658 /* CHAddDishesCollectionViewCell.swift */; };
+		9CBE68FA2BDBD638008B8658 /* CHAddDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE68F92BDBD638008B8658 /* CHAddDishesViewController.swift */; };
+		9CF9B5682BDFD77C00491004 /* CHDishesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF9B5672BDFD77C00491004 /* CHDishesAPIManager.swift */; };
+		9CFA7B812BD6517A002DDD75 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA7B802BD6517A002DDD75 /* CategoriesCollectionViewCell.swift */; };
+		9CFA7B872BD6837B002DDD75 /* PopularDishesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA7B862BD6837B002DDD75 /* PopularDishesCollectionViewCell.swift */; };
+		9CFA7B892BD6AD7E002DDD75 /* AllDishesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA7B882BD6AD7E002DDD75 /* AllDishesCollectionView.swift */; };
+		E917D93C2C05CDD1009E6FDB /* CHPlaceOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917D93B2C05CDD1009E6FDB /* CHPlaceOrderViewController.swift */; };
+		E917D93E2C05E7DF009E6FDB /* CHMyOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917D93D2C05E7DF009E6FDB /* CHMyOrdersViewController.swift */; };
+		E917D9402C05EA7B009E6FDB /* CHMyOrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917D93F2C05EA7B009E6FDB /* CHMyOrdersTableViewCell.swift */; };
+		E917D9422C062870009E6FDB /* CHMyOrdersChefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917D9412C062870009E6FDB /* CHMyOrdersChefViewController.swift */; };
+		E917D9442C062896009E6FDB /* CHMyOrdersChefTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917D9432C062896009E6FDB /* CHMyOrdersChefTableViewCell.swift */; };
+		E92DDFD72BD92E7200CBF30F /* CHProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92DDFD62BD92E7200CBF30F /* CHProfileViewController.swift */; };
+		E92DDFD92BD9309600CBF30F /* CHEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92DDFD82BD9309600CBF30F /* CHEditProfileViewController.swift */; };
+		E92DDFDB2BD937D800CBF30F /* CHDishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92DDFDA2BD937D800CBF30F /* CHDishDetailViewController.swift */; };
+		E93A9D0C2BD2B83600C6DF97 /* CHAccountsApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A9D0B2BD2B83600C6DF97 /* CHAccountsApiManager.swift */; };
+		E93A9D0E2BD2C1B300C6DF97 /* CHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A9D0D2BD2C1B300C6DF97 /* CHHomeViewController.swift */; };
+		E93C76392BE3EA67007EBFFA /* CHResturantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93C76382BE3EA67007EBFFA /* CHResturantModel.swift */; };
+		E93C763B2BE4BDBD007EBFFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E93C763A2BE4BDBD007EBFFA /* GoogleService-Info.plist */; };
+		E93C763D2BE4C5E5007EBFFA /* TestInterfaceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93C763C2BE4C5E5007EBFFA /* TestInterfaceAdapter.swift */; };
+		E93C76412BE4EF70007EBFFA /* CHMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93C76402BE4EF70007EBFFA /* CHMessagesViewController.swift */; };
+		E93C76432BE4F056007EBFFA /* CHMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93C76422BE4F056007EBFFA /* CHMessageTableViewCell.swift */; };
+		E96E88B92BE3943C00F7A229 /* CHColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96E88B82BE3943B00F7A229 /* CHColorConstants.swift */; };
+		E96E88BB2BE394FC00F7A229 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96E88BA2BE394FC00F7A229 /* UIFont+Extension.swift */; };
+		E96E88BD2BE39C1E00F7A229 /* CHDishesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96E88BC2BE39C1E00F7A229 /* CHDishesModel.swift */; };
+		E96E88BF2BE39E6400F7A229 /* CHDishImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96E88BE2BE39E6400F7A229 /* CHDishImageModel.swift */; };
+		E9CA6F522BD7DAFA0051BDFD /* CHTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CA6F512BD7DAFA0051BDFD /* CHTabBarViewController.swift */; };
+		E9CA6F542BD7EFFC0051BDFD /* CHSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CA6F532BD7EFFC0051BDFD /* CHSearchViewController.swift */; };
+		E9CA6F572BD7F0A80051BDFD /* CHSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CA6F562BD7F0A80051BDFD /* CHSearchTableViewCell.swift */; };
+		E9E502732BFDBCB600156379 /* CHCategoriesRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E502722BFDBCB600156379 /* CHCategoriesRestaurantViewController.swift */; };
+		E9F731102BF5FD2D000A0031 /* CHDishRatingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F7310F2BF5FD2D000A0031 /* CHDishRatingModel.swift */; };
+		E9F731122BF610F7000A0031 /* CHFoodCategoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F731112BF610F7000A0031 /* CHFoodCategoriesListViewController.swift */; };
+		E9F731142BF613DF000A0031 /* CHFoodCategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F731132BF613DF000A0031 /* CHFoodCategoriesTableViewCell.swift */; };
+		E9F731162BF63539000A0031 /* CHResturantCategoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F731152BF63539000A0031 /* CHResturantCategoriesListViewController.swift */; };
+		E9F731182BF63AEF000A0031 /* CHChefCategoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F731172BF63AEF000A0031 /* CHChefCategoriesListViewController.swift */; };
+		E9F7311A2BF640F8000A0031 /* CHChefPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F731192BF640F8000A0031 /* CHChefPageViewController.swift */; };
+		E9F7311C2BF64F6A000A0031 /* CHSignUpAsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F7311B2BF64F6A000A0031 /* CHSignUpAsViewController.swift */; };
+		E9F7311E2BF741D6000A0031 /* SignupRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F7311D2BF741D6000A0031 /* SignupRestaurantViewController.swift */; };
+		E9F731202BF77231000A0031 /* CHMyDIshesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F7311F2BF77231000A0031 /* CHMyDIshesViewController.swift */; };
+		E9F731222BF773E0000A0031 /* CHAddRestaurantAndChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F731212BF773E0000A0031 /* CHAddRestaurantAndChatViewController.swift */; };
+		E9F731242BF796D7000A0031 /* CHMyDishesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F731232BF796D7000A0031 /* CHMyDishesTableViewCell.swift */; };
+		E9F731262BF7A97B000A0031 /* CHChefProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F731252BF7A97B000A0031 /* CHChefProfileDetailViewController.swift */; };
+		E9F731282BF7ACD0000A0031 /* CHDishBuyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F731272BF7ACD0000A0031 /* CHDishBuyModel.swift */; };
+		E9F7312A2BF7B2A3000A0031 /* CHMyChefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F731292BF7B2A3000A0031 /* CHMyChefsViewController.swift */; };
+		E9F7312C2BF7B306000A0031 /* CHMyChefTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F7312B2BF7B306000A0031 /* CHMyChefTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A5440222BD19AF30063A286 /* WalkThroughPageOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughPageOneViewController.swift; sourceTree = "<group>"; };
+		0A5440242BD19B190063A286 /* WalkThroughPageTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughPageTwoViewController.swift; sourceTree = "<group>"; };
+		0A5440262BD19B5B0063A286 /* WalkThroughPageThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughPageThreeViewController.swift; sourceTree = "<group>"; };
+		0AABD3E52BD16A0100B0573F /* Cheffy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheffy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AABD3E82BD16A0100B0573F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0AABD3EA2BD16A0100B0573F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0AABD3EC2BD16A0100B0573F /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		0AABD3EF2BD16A0100B0573F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AABD3F12BD16A0500B0573F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AABD3F42BD16A0500B0573F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0AABD3F62BD16A0500B0573F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AABD3FD2BD173C800B0573F /* PagerRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerRootViewController.swift; sourceTree = "<group>"; };
+		296D4CD9DA57D2C97A4DB82A /* Pods_Cheffy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cheffy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0A8CE32BD24FB500D9946D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		9C0A8CE82BD2507400D9946D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9C0A8CEC2BD250E000D9946D /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
+		9C0A8CF42BD2516800D9946D /* CHResturantAPIManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHResturantAPIManagers.swift; sourceTree = "<group>"; };
+		9C0A8CF62BD2517400D9946D /* Libraries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Libraries.swift; sourceTree = "<group>"; };
+		9C0A8CF82BD2517D00D9946D /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		9C0A8CFB2BD2799F00D9946D /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		9C0A8CFD2BD279F100D9946D /* SignupPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageViewController.swift; sourceTree = "<group>"; };
+		9C2D37BB2BDB80500087E29C /* CHCategoriesDishesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCategoriesDishesPageViewController.swift; sourceTree = "<group>"; };
+		9C2D37BD2BDB81F00087E29C /* CHCategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		9C2D37BF2BDB95930087E29C /* DishDetailViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
+		9C2D37C12BDBADD20087E29C /* CHResturantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHResturantTableViewCell.swift; sourceTree = "<group>"; };
+		9C2D37C32BDBAE8F0087E29C /* CHResturantPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHResturantPageViewController.swift; sourceTree = "<group>"; };
+		9CAC2E5D2BDBE7DD00BCE8BD /* CHUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHUserModel.swift; sourceTree = "<group>"; };
+		9CAC2E5F2BDBEC4700BCE8BD /* CHProfileAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHProfileAPIManager.swift; sourceTree = "<group>"; };
+		9CBE68F72BDBD5F8008B8658 /* CHAddDishesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHAddDishesCollectionViewCell.swift; sourceTree = "<group>"; };
+		9CBE68F92BDBD638008B8658 /* CHAddDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHAddDishesViewController.swift; sourceTree = "<group>"; };
+		9CF9B5672BDFD77C00491004 /* CHDishesAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHDishesAPIManager.swift; sourceTree = "<group>"; };
+		9CFA7B802BD6517A002DDD75 /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		9CFA7B862BD6837B002DDD75 /* PopularDishesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDishesCollectionViewCell.swift; sourceTree = "<group>"; };
+		9CFA7B882BD6AD7E002DDD75 /* AllDishesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishesCollectionView.swift; sourceTree = "<group>"; };
+		A3E7F759C9AF003EF11C3726 /* Pods-Cheffy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheffy.release.xcconfig"; path = "Target Support Files/Pods-Cheffy/Pods-Cheffy.release.xcconfig"; sourceTree = "<group>"; };
+		C303F9C39F0682E2AC07237C /* Pods-Cheffy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheffy.debug.xcconfig"; path = "Target Support Files/Pods-Cheffy/Pods-Cheffy.debug.xcconfig"; sourceTree = "<group>"; };
+		E917D93B2C05CDD1009E6FDB /* CHPlaceOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHPlaceOrderViewController.swift; sourceTree = "<group>"; };
+		E917D93D2C05E7DF009E6FDB /* CHMyOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHMyOrdersViewController.swift; sourceTree = "<group>"; };
+		E917D93F2C05EA7B009E6FDB /* CHMyOrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHMyOrdersTableViewCell.swift; sourceTree = "<group>"; };
+		E917D9412C062870009E6FDB /* CHMyOrdersChefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHMyOrdersChefViewController.swift; sourceTree = "<group>"; };
+		E917D9432C062896009E6FDB /* CHMyOrdersChefTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHMyOrdersChefTableViewCell.swift; sourceTree = "<group>"; };
+		E92DDFD62BD92E7200CBF30F /* CHProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHProfileViewController.swift; sourceTree = "<group>"; };
+		E92DDFD82BD9309600CBF30F /* CHEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHEditProfileViewController.swift; sourceTree = "<group>"; };
+		E92DDFDA2BD937D800CBF30F /* CHDishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHDishDetailViewController.swift; sourceTree = "<group>"; };
+		E93A9D0B2BD2B83600C6DF97 /* CHAccountsApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHAccountsApiManager.swift; sourceTree = "<group>"; };
+		E93A9D0D2BD2C1B300C6DF97 /* CHHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHHomeViewController.swift; sourceTree = "<group>"; };
+		E93C76382BE3EA67007EBFFA /* CHResturantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHResturantModel.swift; sourceTree = "<group>"; };
+		E93C763A2BE4BDBD007EBFFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E93C763C2BE4C5E5007EBFFA /* TestInterfaceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInterfaceAdapter.swift; sourceTree = "<group>"; };
+		E93C76402BE4EF70007EBFFA /* CHMessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHMessagesViewController.swift; sourceTree = "<group>"; };
+		E93C76422BE4F056007EBFFA /* CHMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHMessageTableViewCell.swift; sourceTree = "<group>"; };
+		E96E88B82BE3943B00F7A229 /* CHColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHColorConstants.swift; sourceTree = "<group>"; };
+		E96E88BA2BE394FC00F7A229 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		E96E88BC2BE39C1E00F7A229 /* CHDishesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHDishesModel.swift; sourceTree = "<group>"; };
+		E96E88BE2BE39E6400F7A229 /* CHDishImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHDishImageModel.swift; sourceTree = "<group>"; };
+		E9CA6F512BD7DAFA0051BDFD /* CHTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHTabBarViewController.swift; sourceTree = "<group>"; };
+		E9CA6F532BD7EFFC0051BDFD /* CHSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHSearchViewController.swift; sourceTree = "<group>"; };
+		E9CA6F562BD7F0A80051BDFD /* CHSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHSearchTableViewCell.swift; sourceTree = "<group>"; };
+		E9E502722BFDBCB600156379 /* CHCategoriesRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCategoriesRestaurantViewController.swift; sourceTree = "<group>"; };
+		E9F7310F2BF5FD2D000A0031 /* CHDishRatingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHDishRatingModel.swift; sourceTree = "<group>"; };
+		E9F731112BF610F7000A0031 /* CHFoodCategoriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHFoodCategoriesListViewController.swift; sourceTree = "<group>"; };
+		E9F731132BF613DF000A0031 /* CHFoodCategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHFoodCategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		E9F731152BF63539000A0031 /* CHResturantCategoriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHResturantCategoriesListViewController.swift; sourceTree = "<group>"; };
+		E9F731172BF63AEF000A0031 /* CHChefCategoriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHChefCategoriesListViewController.swift; sourceTree = "<group>"; };
+		E9F731192BF640F8000A0031 /* CHChefPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHChefPageViewController.swift; sourceTree = "<group>"; };
+		E9F7311B2BF64F6A000A0031 /* CHSignUpAsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHSignUpAsViewController.swift; sourceTree = "<group>"; };
+		E9F7311D2BF741D6000A0031 /* SignupRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRestaurantViewController.swift; sourceTree = "<group>"; };
+		E9F7311F2BF77231000A0031 /* CHMyDIshesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHMyDIshesViewController.swift; sourceTree = "<group>"; };
+		E9F731212BF773E0000A0031 /* CHAddRestaurantAndChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHAddRestaurantAndChatViewController.swift; sourceTree = "<group>"; };
+		E9F731232BF796D7000A0031 /* CHMyDishesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHMyDishesTableViewCell.swift; sourceTree = "<group>"; };
+		E9F731252BF7A97B000A0031 /* CHChefProfileDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHChefProfileDetailViewController.swift; sourceTree = "<group>"; };
+		E9F731272BF7ACD0000A0031 /* CHDishBuyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHDishBuyModel.swift; sourceTree = "<group>"; };
+		E9F731292BF7B2A3000A0031 /* CHMyChefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHMyChefsViewController.swift; sourceTree = "<group>"; };
+		E9F7312B2BF7B306000A0031 /* CHMyChefTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHMyChefTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AABD3E22BD16A0100B0573F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D4EC99E0ACBCAD9D6FBEB1 /* Pods_Cheffy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AABD3DC2BD16A0100B0573F = {
+			isa = PBXGroup;
+			children = (
+				0AABD3E72BD16A0100B0573F /* Cheffy */,
+				0AABD3E62BD16A0100B0573F /* Products */,
+				728A158D1E83C299BCE2A2F7 /* Pods */,
+				B51415ED54A7D653138A15E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0AABD3E62BD16A0100B0573F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AABD3E52BD16A0100B0573F /* Cheffy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AABD3E72BD16A0100B0573F /* Cheffy */ = {
+			isa = PBXGroup;
+			children = (
+				9C0A8CF12BD2513C00D9946D /* APIManagers */,
+				9C0A8CE72BD2505700D9946D /* Constants */,
+				9C0A8CE52BD24FE500D9946D /* App Delegates */,
+				9C0A8CE22BD24F9700D9946D /* Extensions */,
+				9C0A8CFA2BD251A600D9946D /* Customs Views */,
+				9CAC2E5C2BDBE7C200BCE8BD /* Model */,
+				0AABD3FC2BD1733900B0573F /* ViewControllers */,
+				9C0A8CEA2BD250B600D9946D /* StoryBoards */,
+				9C0A8CE62BD2502600D9946D /* Splash Screen */,
+				9C0A8CEF2BD2510400D9946D /* Libraries */,
+				9C0A8CEE2BD250FA00D9946D /* Resources */,
+				9C0A8CEB2BD250CF00D9946D /* UtilityFunctions */,
+				0AABD3F12BD16A0500B0573F /* Assets.xcassets */,
+				E93C763A2BE4BDBD007EBFFA /* GoogleService-Info.plist */,
+				0AABD3F62BD16A0500B0573F /* Info.plist */,
+			);
+			path = Cheffy;
+			sourceTree = "<group>";
+		};
+		0AABD3FC2BD1733900B0573F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AABD3EC2BD16A0100B0573F /* GetStartedViewController.swift */,
+				0AABD3FD2BD173C800B0573F /* PagerRootViewController.swift */,
+				E9F731252BF7A97B000A0031 /* CHChefProfileDetailViewController.swift */,
+				0A5440222BD19AF30063A286 /* WalkThroughPageOneViewController.swift */,
+				0A5440242BD19B190063A286 /* WalkThroughPageTwoViewController.swift */,
+				0A5440262BD19B5B0063A286 /* WalkThroughPageThreeViewController.swift */,
+				9C0A8CFB2BD2799F00D9946D /* LoginPageViewController.swift */,
+				9C0A8CFD2BD279F100D9946D /* SignupPageViewController.swift */,
+				E93A9D0D2BD2C1B300C6DF97 /* CHHomeViewController.swift */,
+				E9CA6F512BD7DAFA0051BDFD /* CHTabBarViewController.swift */,
+				E9CA6F532BD7EFFC0051BDFD /* CHSearchViewController.swift */,
+				E92DDFD62BD92E7200CBF30F /* CHProfileViewController.swift */,
+				E92DDFD82BD9309600CBF30F /* CHEditProfileViewController.swift */,
+				E92DDFDA2BD937D800CBF30F /* CHDishDetailViewController.swift */,
+				9C2D37BB2BDB80500087E29C /* CHCategoriesDishesPageViewController.swift */,
+				9C2D37C32BDBAE8F0087E29C /* CHResturantPageViewController.swift */,
+				E9F731212BF773E0000A0031 /* CHAddRestaurantAndChatViewController.swift */,
+				9CBE68F92BDBD638008B8658 /* CHAddDishesViewController.swift */,
+				E93C76402BE4EF70007EBFFA /* CHMessagesViewController.swift */,
+				E9F731112BF610F7000A0031 /* CHFoodCategoriesListViewController.swift */,
+				E9F731152BF63539000A0031 /* CHResturantCategoriesListViewController.swift */,
+				E9F731172BF63AEF000A0031 /* CHChefCategoriesListViewController.swift */,
+				E9F731192BF640F8000A0031 /* CHChefPageViewController.swift */,
+				E9F7311B2BF64F6A000A0031 /* CHSignUpAsViewController.swift */,
+				E9F7311D2BF741D6000A0031 /* SignupRestaurantViewController.swift */,
+				E9F7311F2BF77231000A0031 /* CHMyDIshesViewController.swift */,
+				E9F731292BF7B2A3000A0031 /* CHMyChefsViewController.swift */,
+				E9E502722BFDBCB600156379 /* CHCategoriesRestaurantViewController.swift */,
+				E917D93B2C05CDD1009E6FDB /* CHPlaceOrderViewController.swift */,
+				E917D93D2C05E7DF009E6FDB /* CHMyOrdersViewController.swift */,
+				E917D9412C062870009E6FDB /* CHMyOrdersChefViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		728A158D1E83C299BCE2A2F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C303F9C39F0682E2AC07237C /* Pods-Cheffy.debug.xcconfig */,
+				A3E7F759C9AF003EF11C3726 /* Pods-Cheffy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9C0A8CE22BD24F9700D9946D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C0A8CE32BD24FB500D9946D /* UIView+Extensions.swift */,
+				E96E88BA2BE394FC00F7A229 /* UIFont+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9C0A8CE52BD24FE500D9946D /* App Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				0AABD3E82BD16A0100B0573F /* AppDelegate.swift */,
+				0AABD3EA2BD16A0100B0573F /* SceneDelegate.swift */,
+			);
+			path = "App Delegates";
+			sourceTree = "<group>";
+		};
+		9C0A8CE62BD2502600D9946D /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0AABD3F32BD16A0500B0573F /* LaunchScreen.storyboard */,
+			);
+			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		9C0A8CE72BD2505700D9946D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9C0A8CE82BD2507400D9946D /* Constants.swift */,
+				E96E88B82BE3943B00F7A229 /* CHColorConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9C0A8CEA2BD250B600D9946D /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				0AABD3EE2BD16A0100B0573F /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		9C0A8CEB2BD250CF00D9946D /* UtilityFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				9C0A8CEC2BD250E000D9946D /* UtilityFunctions.swift */,
+			);
+			path = UtilityFunctions;
+			sourceTree = "<group>";
+		};
+		9C0A8CEE2BD250FA00D9946D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C0A8CF82BD2517D00D9946D /* Resources.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9C0A8CEF2BD2510400D9946D /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				9C0A8CF62BD2517400D9946D /* Libraries.swift */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		9C0A8CF12BD2513C00D9946D /* APIManagers */ = {
+			isa = PBXGroup;
+			children = (
+				9C0A8CF42BD2516800D9946D /* CHResturantAPIManagers.swift */,
+				E93A9D0B2BD2B83600C6DF97 /* CHAccountsApiManager.swift */,
+				9CAC2E5F2BDBEC4700BCE8BD /* CHProfileAPIManager.swift */,
+				9CF9B5672BDFD77C00491004 /* CHDishesAPIManager.swift */,
+			);
+			path = APIManagers;
+			sourceTree = "<group>";
+		};
+		9C0A8CFA2BD251A600D9946D /* Customs Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9CA6F552BD7F0890051BDFD /* TableViewCell */,
+				9CFA7B7F2BD6512A002DDD75 /* CollectionViewCell */,
+			);
+			path = "Customs Views";
+			sourceTree = "<group>";
+		};
+		9CAC2E5C2BDBE7C200BCE8BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CAC2E5D2BDBE7DD00BCE8BD /* CHUserModel.swift */,
+				E96E88BC2BE39C1E00F7A229 /* CHDishesModel.swift */,
+				E96E88BE2BE39E6400F7A229 /* CHDishImageModel.swift */,
+				E93C76382BE3EA67007EBFFA /* CHResturantModel.swift */,
+				E93C763C2BE4C5E5007EBFFA /* TestInterfaceAdapter.swift */,
+				E9F7310F2BF5FD2D000A0031 /* CHDishRatingModel.swift */,
+				E9F731272BF7ACD0000A0031 /* CHDishBuyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CFA7B7F2BD6512A002DDD75 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9CFA7B802BD6517A002DDD75 /* CategoriesCollectionViewCell.swift */,
+				9CFA7B862BD6837B002DDD75 /* PopularDishesCollectionViewCell.swift */,
+				9CFA7B882BD6AD7E002DDD75 /* AllDishesCollectionView.swift */,
+				9C2D37BF2BDB95930087E29C /* DishDetailViewControllerCollectionViewCell.swift */,
+				9CBE68F72BDBD5F8008B8658 /* CHAddDishesCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		B51415ED54A7D653138A15E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				296D4CD9DA57D2C97A4DB82A /* Pods_Cheffy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9CA6F552BD7F0890051BDFD /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E9CA6F562BD7F0A80051BDFD /* CHSearchTableViewCell.swift */,
+				9C2D37BD2BDB81F00087E29C /* CHCategoriesTableViewCell.swift */,
+				9C2D37C12BDBADD20087E29C /* CHResturantTableViewCell.swift */,
+				E93C76422BE4F056007EBFFA /* CHMessageTableViewCell.swift */,
+				E9F731132BF613DF000A0031 /* CHFoodCategoriesTableViewCell.swift */,
+				E9F731232BF796D7000A0031 /* CHMyDishesTableViewCell.swift */,
+				E9F7312B2BF7B306000A0031 /* CHMyChefTableViewCell.swift */,
+				E917D93F2C05EA7B009E6FDB /* CHMyOrdersTableViewCell.swift */,
+				E917D9432C062896009E6FDB /* CHMyOrdersChefTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AABD3E42BD16A0100B0573F /* Cheffy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AABD3F92BD16A0500B0573F /* Build configuration list for PBXNativeTarget "Cheffy" */;
+			buildPhases = (
+				5F56C075DF2109E5646E921A /* [CP] Check Pods Manifest.lock */,
+				0AABD3E12BD16A0100B0573F /* Sources */,
+				0AABD3E22BD16A0100B0573F /* Frameworks */,
+				0AABD3E32BD16A0100B0573F /* Resources */,
+				288424A983443CF3740657B8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cheffy;
+			productName = Cheffy;
+			productReference = 0AABD3E52BD16A0100B0573F /* Cheffy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AABD3DD2BD16A0100B0573F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					0AABD3E42BD16A0100B0573F = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 0AABD3E02BD16A0100B0573F /* Build configuration list for PBXProject "Cheffy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AABD3DC2BD16A0100B0573F;
+			productRefGroup = 0AABD3E62BD16A0100B0573F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AABD3E42BD16A0100B0573F /* Cheffy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AABD3E32BD16A0100B0573F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AABD3F52BD16A0500B0573F /* LaunchScreen.storyboard in Resources */,
+				E93C763B2BE4BDBD007EBFFA /* GoogleService-Info.plist in Resources */,
+				0AABD3F22BD16A0500B0573F /* Assets.xcassets in Resources */,
+				0AABD3F02BD16A0100B0573F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		288424A983443CF3740657B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cheffy/Pods-Cheffy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cheffy/Pods-Cheffy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cheffy/Pods-Cheffy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F56C075DF2109E5646E921A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cheffy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AABD3E12BD16A0100B0573F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F7311A2BF640F8000A0031 /* CHChefPageViewController.swift in Sources */,
+				9CFA7B812BD6517A002DDD75 /* CategoriesCollectionViewCell.swift in Sources */,
+				E93C763D2BE4C5E5007EBFFA /* TestInterfaceAdapter.swift in Sources */,
+				9CAC2E602BDBEC4700BCE8BD /* CHProfileAPIManager.swift in Sources */,
+				0A5440232BD19AF30063A286 /* WalkThroughPageOneViewController.swift in Sources */,
+				9CBE68FA2BDBD638008B8658 /* CHAddDishesViewController.swift in Sources */,
+				0AABD3ED2BD16A0100B0573F /* GetStartedViewController.swift in Sources */,
+				0AABD3E92BD16A0100B0573F /* AppDelegate.swift in Sources */,
+				9CAC2E5E2BDBE7DD00BCE8BD /* CHUserModel.swift in Sources */,
+				9CBE68F82BDBD5F8008B8658 /* CHAddDishesCollectionViewCell.swift in Sources */,
+				9CFA7B892BD6AD7E002DDD75 /* AllDishesCollectionView.swift in Sources */,
+				9C2D37BE2BDB81F00087E29C /* CHCategoriesTableViewCell.swift in Sources */,
+				E9CA6F542BD7EFFC0051BDFD /* CHSearchViewController.swift in Sources */,
+				E9F731202BF77231000A0031 /* CHMyDIshesViewController.swift in Sources */,
+				E9F731162BF63539000A0031 /* CHResturantCategoriesListViewController.swift in Sources */,
+				9C2D37C02BDB95930087E29C /* DishDetailViewControllerCollectionViewCell.swift in Sources */,
+				E917D9402C05EA7B009E6FDB /* CHMyOrdersTableViewCell.swift in Sources */,
+				0AABD3FE2BD173C800B0573F /* PagerRootViewController.swift in Sources */,
+				E9CA6F572BD7F0A80051BDFD /* CHSearchTableViewCell.swift in Sources */,
+				0AABD3EB2BD16A0100B0573F /* SceneDelegate.swift in Sources */,
+				E93A9D0C2BD2B83600C6DF97 /* CHAccountsApiManager.swift in Sources */,
+				E96E88BF2BE39E6400F7A229 /* CHDishImageModel.swift in Sources */,
+				9C0A8CFE2BD279F100D9946D /* SignupPageViewController.swift in Sources */,
+				E96E88BD2BE39C1E00F7A229 /* CHDishesModel.swift in Sources */,
+				9CFA7B872BD6837B002DDD75 /* PopularDishesCollectionViewCell.swift in Sources */,
+				E9F731122BF610F7000A0031 /* CHFoodCategoriesListViewController.swift in Sources */,
+				E92DDFD92BD9309600CBF30F /* CHEditProfileViewController.swift in Sources */,
+				E93C76432BE4F056007EBFFA /* CHMessageTableViewCell.swift in Sources */,
+				E917D9442C062896009E6FDB /* CHMyOrdersChefTableViewCell.swift in Sources */,
+				9C0A8CFC2BD2799F00D9946D /* LoginPageViewController.swift in Sources */,
+				E9F731242BF796D7000A0031 /* CHMyDishesTableViewCell.swift in Sources */,
+				E9F731102BF5FD2D000A0031 /* CHDishRatingModel.swift in Sources */,
+				E96E88BB2BE394FC00F7A229 /* UIFont+Extension.swift in Sources */,
+				E93A9D0E2BD2C1B300C6DF97 /* CHHomeViewController.swift in Sources */,
+				0A5440252BD19B190063A286 /* WalkThroughPageTwoViewController.swift in Sources */,
+				E9F731282BF7ACD0000A0031 /* CHDishBuyModel.swift in Sources */,
+				9C0A8CE42BD24FB500D9946D /* UIView+Extensions.swift in Sources */,
+				E9F7312A2BF7B2A3000A0031 /* CHMyChefsViewController.swift in Sources */,
+				9CF9B5682BDFD77C00491004 /* CHDishesAPIManager.swift in Sources */,
+				E9F7311E2BF741D6000A0031 /* SignupRestaurantViewController.swift in Sources */,
+				9C2D37BC2BDB80500087E29C /* CHCategoriesDishesPageViewController.swift in Sources */,
+				E9F7311C2BF64F6A000A0031 /* CHSignUpAsViewController.swift in Sources */,
+				E9F731262BF7A97B000A0031 /* CHChefProfileDetailViewController.swift in Sources */,
+				9C0A8CF72BD2517400D9946D /* Libraries.swift in Sources */,
+				E93C76392BE3EA67007EBFFA /* CHResturantModel.swift in Sources */,
+				9C2D37C22BDBADD20087E29C /* CHResturantTableViewCell.swift in Sources */,
+				E9F731182BF63AEF000A0031 /* CHChefCategoriesListViewController.swift in Sources */,
+				E96E88B92BE3943C00F7A229 /* CHColorConstants.swift in Sources */,
+				E92DDFDB2BD937D800CBF30F /* CHDishDetailViewController.swift in Sources */,
+				E93C76412BE4EF70007EBFFA /* CHMessagesViewController.swift in Sources */,
+				E9F731222BF773E0000A0031 /* CHAddRestaurantAndChatViewController.swift in Sources */,
+				0A5440272BD19B5B0063A286 /* WalkThroughPageThreeViewController.swift in Sources */,
+				E9E502732BFDBCB600156379 /* CHCategoriesRestaurantViewController.swift in Sources */,
+				E9F7312C2BF7B306000A0031 /* CHMyChefTableViewCell.swift in Sources */,
+				9C2D37C42BDBAE8F0087E29C /* CHResturantPageViewController.swift in Sources */,
+				E9CA6F522BD7DAFA0051BDFD /* CHTabBarViewController.swift in Sources */,
+				E92DDFD72BD92E7200CBF30F /* CHProfileViewController.swift in Sources */,
+				9C0A8CF52BD2516800D9946D /* CHResturantAPIManagers.swift in Sources */,
+				E917D93C2C05CDD1009E6FDB /* CHPlaceOrderViewController.swift in Sources */,
+				E917D9422C062870009E6FDB /* CHMyOrdersChefViewController.swift in Sources */,
+				E9F731142BF613DF000A0031 /* CHFoodCategoriesTableViewCell.swift in Sources */,
+				E917D93E2C05E7DF009E6FDB /* CHMyOrdersViewController.swift in Sources */,
+				9C0A8CED2BD250E000D9946D /* UtilityFunctions.swift in Sources */,
+				9C0A8CE92BD2507400D9946D /* Constants.swift in Sources */,
+				9C0A8CF92BD2517D00D9946D /* Resources.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0AABD3EE2BD16A0100B0573F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AABD3EF2BD16A0100B0573F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0AABD3F32BD16A0500B0573F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AABD3F42BD16A0500B0573F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AABD3F72BD16A0500B0573F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0AABD3F82BD16A0500B0573F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AABD3FA2BD16A0500B0573F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C303F9C39F0682E2AC07237C /* Pods-Cheffy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6N44MHCNUC;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cheffy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tnc.rawapplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = raw_development;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0AABD3FB2BD16A0500B0573F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3E7F759C9AF003EF11C3726 /* Pods-Cheffy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6N44MHCNUC;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cheffy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tnc.rawapplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = raw_development;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AABD3E02BD16A0100B0573F /* Build configuration list for PBXProject "Cheffy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AABD3F72BD16A0500B0573F /* Debug */,
+				0AABD3F82BD16A0500B0573F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AABD3F92BD16A0500B0573F /* Build configuration list for PBXNativeTarget "Cheffy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AABD3FA2BD16A0500B0573F /* Debug */,
+				0AABD3FB2BD16A0500B0573F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AABD3DD2BD16A0100B0573F /* Project object */;
+}

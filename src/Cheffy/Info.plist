@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>comgooglemaps</string>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>chat_sdk</key>
+	<dict>
+		<key>anonymous</key>
+		<dict>
+			<key>enabled</key>
+			<false/>
+		</dict>
+		<key>firebase</key>
+		<dict>
+			<key>root_path</key>
+			<string>ChatV1</string>
+			<key>storage_path</key>
+			<string>gs://cheffy-7edd1.appspot.com</string>
+		</dict>
+		<key>settings</key>
+		<dict>
+			<key>app_badge_enabled</key>
+			<true/>
+			<key>user_chat_info_enabled</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "UK-Blog_Guideto-JapaneseFood_Header_Desktop.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "UK-Blog_Guideto-JapaneseFood_Header_Desktop@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "UK-Blog_Guideto-JapaneseFood_Header_Desktop@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

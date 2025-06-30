@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Cheffy' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Cheffy
+inhibit_all_warnings!
+pod 'iOSDropDown'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
+pod 'SVProgressHUD'
+pod 'SDWebImage', '~> 5.0'
+pod 'IQKeyboardManager'
+pod "ChatSDK", '4.13.6'
+pod "ChatSDKFirebase/Adapter" , '4.13.6'
+pod "ChatSDKFirebase/FileStorage" , '4.13.6'
+pod "ChatSDKFirebase/Push", '4.13.6'   
+end
